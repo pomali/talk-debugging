@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        font-size: 30vw;
+        width: 1.5em;
+        height: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">10</button>
+  </body>
+
+  <script>
+    function countDown(event) {
+      const previous = event.currentTarget.innerHTML;
+      event.currentTarget.innerHTML = previous - 1;
+    }
+    document.getElementById("btn").addEventListener("click", countDown);
+
+    let inc = 1;
+    setInterval(() => {
+      document.getElementById("btn").innerHTML =
+        parseInt(document.getElementById("btn").innerHTML) + inc;
+    }, 1000);
+  </script>
+</html>

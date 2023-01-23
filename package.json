@@ -1,0 +1,11 @@
+{
+  "name": "talk-debugging",
+  "description": "",
+  "authors": "pom",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx live-server --mount=talk.md:talk --open=presentation.html --ignorePattern=.git/.\\*"
+  },
+  "main": "",
+  "dependencies": {}
+}
