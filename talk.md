@@ -109,7 +109,6 @@ Aj pri pisani testov nam vie pomoct debugger, vieme ho pripojit na testing frame
 Key point: Debugger sa da pripojit aj ku testom.
 
 ---
-
 ### `node` debugging
 
 ```
