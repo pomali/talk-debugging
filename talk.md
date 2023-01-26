@@ -109,21 +109,10 @@ Aj pri pisani testov nam vie pomoct debugger, vieme ho pripojit na testing frame
 Key point: Debugger sa da pripojit aj ku testom.
 
 ---
-### `node` debugging
-
-```
-node inspect demo-node.js
-```
-
-<!--vert-->
-- `help`
-- `continue` / `c`
-- 
-- `setBreakpoint` / `sb`
-
---- 
 
 ### VSCode debug
+
+demo-jest
 
 - add launch.json
 - connect to node
@@ -141,7 +130,6 @@ Note:
 Najviac seniorsky pristup je poriadne sa zamysliet nad problemom, a prejst si co je napisane. Toto je ale energeticky narocne a ludske telo sa tomu brani. Pouzivanie nastrojov rozmyslaniu nebrani, ale vie rychlo objavit chybne predpoklady ktore mame o programe, kniznici, alebo poradi vykonavania. Nechajte robit pocitace to v com su dobre - nasledovanie prikazov.
 
 Key point: Pouzivanie nastrojov pomaha aj pri silnom zamysleni sa nad problemom.
-
 
 ---
 
@@ -177,8 +165,6 @@ Niekedy sa bug neprejavuje tym, ze nieco spadne, alebo
 </div>
 
 ---
-
-
 
 ---
 
@@ -218,4 +204,7 @@ computer
 - Where you can use debugger
 - How to set up debugger
 - Profilers exist
+
+```
+
 ```
