@@ -2,7 +2,23 @@
 
 ## What is it good for?
 
-Stanislav Párnický @ stylers.cloud
+<footer style="margin-top: 20vh;">Stanislav Párnický @ stylers.cloud</footer>
+
+---
+
+## Debugger
+
+- inpect code execution
+- show call stack
+- read variables
+- REPL
+
+Note:
+
+spomenut(?)
+
+- step-by-step execution
+- breakpoints
 
 ---
 
@@ -14,6 +30,7 @@ Stanislav Párnický @ stylers.cloud
 1. use debugger
 
 Note:
+
 Na zaciatok mala anketa - Ako debugujete? Ake techniky pouzivate na najdenie bugu ktory viete, ze tam je ale netusite kde presne? Mozete zdvihnut ruku aj viac krat.
 
 Zdvihnite ruku ak hladate bug iba pozretim sa na kod a silnym zamyslenim sa.
@@ -30,7 +47,9 @@ Tak sa podme pozriet ako by nam mohol ten debugger pomoct.
 
 ---
 
-### Temporary `console.log`
+### 1. Temporary `console.log`
+
+---
 
 <div>
 <figure>
@@ -40,6 +59,7 @@ Tak sa podme pozriet ako by nam mohol ten debugger pomoct.
 </div>
 
 Note:
+
 Asi kazdy rad prida par console.log-ov aby lepsie rozumel, co sa stalo, v akom poradi, ake hodnoty ma premenna.
 Otvorime subor, napiseme par riadkov, pozreme vysledok. Fixneme bug a commitneme. Ale nastastie mame pre-commit hook s eslint no-console a tak ideme mazat riadky. No co ak by to islo lahsie?
 
@@ -57,6 +77,7 @@ Key point: Aj o console.logy sa treba starat
 </div>
 
 Note:
+
 Debuggery casto podporuju "logpoints" co je to iste ako console.log, len sa onho stara debugger. Urcite sa nedostanu do codebase a ked ich chcem zmazat to jednoducho urobim cez debugger, napriklad cez "Remove all breakpoints". Ano, logpoints su specialne breakpointy.
 
 (Su pripady ktore logpoints nezvladaju, ale nie je to vobec tak hrozne)
@@ -67,27 +88,18 @@ Key point: Logpoints su ako console.log o ktore sa stara debugger.
 
 ### So how do I use this debugger thing?
 
-<!--vert-->
-
 1. Open DevTools Sources tab
 2. ???
 3. Profit!!!
 
-<!--vert-->
-
-### ???
-
-- interrupt running program
-- inspect and change variables and stack
-- add a breakpoint
-- add a logpoint
-
----
-
 <a href="/demo/demo-chrome/basic.html" target="_blank">Demo in browser</a>
 
 Note:
-Otvorime DevTools, najdeme to co nas zaujima, dajme tomu, ze chceme vediet kde je ulozena hodnota cisielka ktore sa zobrazuje na
+
+- Otvorime DevTools
+- najdeme to co nas zaujima
+- chceme vediet co sa deje
+- Spomenut ze chrome podporuje aj remote debugging
 
 <!--vert-->
 
@@ -114,44 +126,18 @@ Key point: Debugger sa da pripojit aj ku testom.
 
 demo-jest
 
-- add launch.json
-- connect to node
-- debug jest test
-
----
-
-###
+- config launch.json
+- run debug
 
 ---
 
 ### 3. Staring at code and thinking really hard
 
 Note:
-Najviac seniorsky pristup je poriadne sa zamysliet nad problemom, a prejst si co je napisane. Toto je ale energeticky narocne a ludske telo sa tomu brani. Pouzivanie nastrojov rozmyslaniu nebrani, ale vie rychlo objavit chybne predpoklady ktore mame o programe, kniznici, alebo poradi vykonavania. Nechajte robit pocitace to v com su dobre - nasledovanie prikazov.
+
+Najviac "senior" pristup je poriadne sa zamysliet nad problemom, a prejst si co je napisane. Toto je ale energeticky narocne a ludske telo sa tomu brani. Pouzivanie nastrojov rozmyslaniu nebrani, ale vie rychlo objavit chybne predpoklady ktore mame o programe, kniznici, alebo poradi vykonavania. Nechajte robit pocitace to v com su dobre - nasledovanie prikazov.
 
 Key point: Pouzivanie nastrojov pomaha aj pri silnom zamysleni sa nad problemom.
-
----
-
-### other debuggers (clients)
-
----
-
-### How it works?
-
-Note: TODO
-
-- describe protocol
-- node.js + vscode + chrome compatibility
-
----
-
----
-
-### Profilers
-
-Note:
-Niekedy sa bug neprejavuje tym, ze nieco spadne, alebo
 
 ---
 
@@ -164,26 +150,49 @@ Niekedy sa bug neprejavuje tym, ze nieco spadne, alebo
 <figure>
 </div>
 
----
+Note:
+
+Niekedy sa bug neprejavuje tym, ze nieco spadne, alebo
 
 ---
 
-### Debugging on mobile
+### How it works?
 
-phone
+- runtime
+- debugger "server"
+- debugger "client"
 
-- allow USB debugging
-- open chrome
+Note:
 
-computer
-
-- chrome://inspect
-
----
+- describe protocol
+- node.js + vscode + chrome compatibility
 
 ---
 
-#### Happy End
+### Debugging mobile
+
+- on mobile
+
+  - allow USB debugging
+  - open chrome
+
+- on computer
+  - `chrome://inspect`
+
+---
+
+## Key points
+
+- Debuggers are easy to set up
+- Logpoints are temporary console.logs
+- Breakpoints help you poke around running app
+- `debugger;` works when sourcemaps fail
+- Debugger has REPL
+- Profilers exist
+
+---
+
+#### End
 
 <div>
 <figure>
@@ -191,20 +200,3 @@ computer
 <figcaption>Programmer is happy that he caught the bug</figcaption>
 <figure>
 </div>
-
----
-
-## Key points
-
-- Debuggers are there for you
-- Logpoints are temporary console.logs
-- Breakpoints help you poke around running app
-- `debugger;` statement works when sourcemaps fail
-- Debugger has REPL
-- Where you can use debugger
-- How to set up debugger
-- Profilers exist
-
-```
-
-```

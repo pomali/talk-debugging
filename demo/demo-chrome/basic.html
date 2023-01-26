@@ -35,8 +35,9 @@
 
     let inc = 1;
     setInterval(() => {
-      document.getElementById("btn").innerHTML =
-        parseInt(document.getElementById("btn").innerHTML) + inc;
+      const btnText = document.getElementById("btn").innerHTML
+      const previous = parseInt(btnText);
+      document.getElementById("btn").innerHTML = previous + inc;
     }, 1000);
   </script>
 </html>
