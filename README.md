@@ -14,3 +14,10 @@ Presented on [ngBeer Bratislava](https://www.linkedin.com/events/ngbeerbratislav
 ```
 npm start
 ```
+
+## Exporting pdf
+
+```
+open https://localhost:8080/presentation.html?print-pdf
+```
+-> Print -> Save as PDF
