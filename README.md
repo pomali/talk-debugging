@@ -6,7 +6,7 @@ Presentation for ngBeer
 
 Overview of features that your browser and IDE has and you probably don't use enough.
 
-Presented on ngBeer Bratislava https://www.linkedin.com/events/ngbeerbratislava-10-welcomein207016825888163909632/about/
+Presented on [ngBeer Bratislava](https://www.linkedin.com/events/ngbeerbratislava-10-welcomein207016825888163909632/about/)
 
 
 ## Running presentation
