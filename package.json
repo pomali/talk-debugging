@@ -4,7 +4,8 @@
   "authors": "pom",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx live-server --mount=talk.md:talk --open=presentation.html --ignorePattern=.git/.\\*"
+    "start": "npx live-server --mount=talk.md:talk --open=presentation.html --ignorePattern=.git/.\\*",
+    "export-pdf": "npx decktape reveal http://127.0.0.1:8080/presentation.html presentation.pdf"
   },
   "main": "",
   "dependencies": {}
